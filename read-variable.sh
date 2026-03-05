@@ -11,3 +11,7 @@
 
 DATE=$(date)
 echo $DATE
+
+Start_time=$(date)
+sleep 15
+End_time=$(date)
