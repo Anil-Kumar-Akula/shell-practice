@@ -8,3 +8,6 @@ read -s pin
 
 echo "name entered as :: $name"
 echo "pin entered as :: $pin"
+
+DATE=$(date)
+echo $DATE
