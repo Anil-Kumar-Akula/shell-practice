@@ -13,11 +13,11 @@ DATE=$(date)
 
 
 Start_time=$(date)
-echo "$Start_time"
+echo "Start time ::$Start_time"
 sleep 15
 End_time=$(date)
-echo "$End_time"
+echo "End time :: $End_time"
 
-Total_time="($End_time-$Start_time)"
+Total_time="$($End_time-$Start_time)"
 
-echo "$Total_time"
+echo "Total time :: $Total_time"
