@@ -8,4 +8,4 @@ echo "Total value :: $SUM"
 
 CRICKETERS=("sachin" "yuvaraj" "dhoni" "shewag")
 
-echo "NO OF CRICKET PLAYERS :: $CRICKETERS"
+echo "NO OF CRICKET PLAYERS :: ${CRICKETERS[0]}"
