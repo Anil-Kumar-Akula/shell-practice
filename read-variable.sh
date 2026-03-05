@@ -10,7 +10,7 @@
 # echo "pin entered as :: $pin"
 
 DATE=$(date)
-echo $DATE
+
 
 Start_time=$(date)
 echo "$Start_time"
