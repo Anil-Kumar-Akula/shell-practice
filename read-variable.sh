@@ -17,3 +17,7 @@ echo "$Start_time"
 sleep 15
 End_time=$(date)
 echo "$End_time"
+
+Total_time="($End_time-$Start_time)"
+
+echo "$Total_time"
