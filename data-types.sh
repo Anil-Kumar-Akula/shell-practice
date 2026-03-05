@@ -6,4 +6,6 @@ NUMBER2=200
 SUM=$(($NUMBER1+$NUMBER2))
 echo "Total value :: $SUM"
 
-CRICKERS=("sachin","yuvaraj","dhoni","shewag")
+CRICKETERS=("sachin","yuvaraj","dhoni","shewag")
+
+echo "NO OF PLAYERS :: $CRICKETERS"
