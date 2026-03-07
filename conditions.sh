@@ -28,9 +28,16 @@
 
 echo "enter the number to check the prime number"
 read NUMBER
+count=0
 
-if [ $((NUMBER % $NUMBER && $NUMBER % 1 ))  -eq 0 ]
-    echo "$NUMBER is a prime number"
+for  (( i=1; i<=NUMBER; i++))
+do
+    if [ $((NUMBER % i)) -eq 0 ]; then
+        ((count++))
+    fi
+done
+if [ $count -eq 2 ]
+ echo "$NUMBER is a prime number"
 else
-    echo "$NUMBER is a not a prime number"
+  echo "$NUMBER is not a prime number"
 fi
