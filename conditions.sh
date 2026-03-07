@@ -18,10 +18,10 @@
 #  echo "$NUMBER is greater than 10"
 # fi
 
-EVEN=$1
+NUMBER=$1
 
-if [ $((EVEN % 2)) -eq 0 ]; then
- echo "$EVEN is a even number"
+if [ $((NUMBER % 2)) -eq 0 ]; then
+ echo "$NUMBER is a even  number"
 else
- echo "$EVEN is a odd number"
+ echo "$NUMBER is a odd number"
 fi
