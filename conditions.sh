@@ -36,7 +36,7 @@ do
         ((count++))
     fi
 done
-if [ $count -eq 2 ]
+if [ $count -eq 2 ]; then
  echo "$NUMBER is a prime number"
 else
  echo "$NUMBER is not a prime number"
