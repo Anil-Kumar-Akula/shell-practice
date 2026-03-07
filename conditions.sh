@@ -39,5 +39,5 @@ done
 if [ $count -eq 2 ]
  echo "$NUMBER is a prime number"
 else
-  echo "$NUMBER is not a prime number"
+ echo "$NUMBER is not a prime number"
 fi
