@@ -33,4 +33,4 @@ if [ $((NUMBER % $NUMBER && $NUMBER % 1 ))  -eq 0 ]
     echo "$NUMBER is a prime number"
 else
     echo "$NUMBER is a not a prime number"
-if
+fi
