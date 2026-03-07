@@ -18,10 +18,19 @@
 #  echo "$NUMBER is greater than 10"
 # fi
 
-NUMBER=$1
+# NUMBER=$1
 
-if [ $((NUMBER % 2)) -eq 0 ]; then
- echo "$NUMBER is a even  number"
+# if [ $((NUMBER % 2)) -eq 0 ]; then
+#  echo "$NUMBER is a even  number"
+# else
+#  echo "$NUMBER is a odd number"
+# fi
+
+echo "enter the number to check the prime number"
+read NUMBER
+
+if [ $((NUMBER % $NUMBER && $NUMBER % 1 ))  -eq 0 ]
+    echo "$NUMBER is a prime number"
 else
- echo "$NUMBER is a odd number"
-fi
+   echo "$NUMBER is a not a prime number"
+if
