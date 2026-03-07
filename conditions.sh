@@ -8,7 +8,7 @@
 #   echo "using the sun glasses dues to high temperature"
 # fi
 
-NUMBER=5
+NUMBER=100
 
 if [  $NUMBER -gt 10 ]; then
  echo "$NUMBER is not greater than 10"
