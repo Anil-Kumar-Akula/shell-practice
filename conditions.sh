@@ -2,8 +2,8 @@
 SEASON=rain
 
 if [ "$SEASON" = "rain" ]; then
-    echo "usng the sun umbrella"
+    echo "using the umbrella because of rain"
 
 else 
-  echo "using the sun glasses"
+  echo "using the sun glasses dues to high temperature"
 fi
