@@ -20,7 +20,7 @@
 
 EVEN=$1
 
-if [ $EVEN*2 -eq 0 ]; then
+if [ $((EVEN % 2)) -eq 0 ]; then
  echo "$EVEN is a even number"
 else
  echo "$EVEN is a odd number"
