@@ -10,7 +10,8 @@
 
 NUMBER=5
 
-if [  $NUMBER > 10 ]; then
+if [  $NUMBER -lt 10 ]; then
  echo "$NUMBER is not greater than 10"
 else
  echo "$NUMBER is greater than 10"
+fi
