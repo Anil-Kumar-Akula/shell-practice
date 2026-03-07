@@ -1,7 +1,7 @@
 #!/bin/bash
-SEANSON=rain
+SEASON=rain
 
-if($SEASON -eq rain); then
+if["$SEASON="rain"]
     echo "usng the sun umbrella "
 
 else 
