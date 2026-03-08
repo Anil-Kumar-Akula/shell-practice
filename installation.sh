@@ -23,13 +23,21 @@ for i in ${PACKAGES[@]};do
      exit 1
     fi
 
-   
+   rpm -q $i
    
     if [ $? -eq 0 ]; then
-     dnf install $i -y
-     echo "$i are installed successful"
+     echo "$i are already installed in the system"
     else
-     echo "ERROR :: $i are not installed sucessfull"
+     dnf install $i -y"
      exit 1
     fi
+    
+
+    if [ $? -eq 0 ]; then
+     echo "$i are installed sucessfully"
+    else
+     echo "ERROR :: $i installation failed"
+     exit 1
+    fi
+
 done
