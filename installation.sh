@@ -26,7 +26,7 @@ fi
 
 for i in ${PACKAGES[@]}; do
   
-  rpm -q $i
+  dnf list installed $i
   if [ $? -eq 0 ]; then
     echo "$i already installed in the system"
     
