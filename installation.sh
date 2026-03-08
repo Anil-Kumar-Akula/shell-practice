@@ -32,10 +32,10 @@ for i in ${PACKAGES[@]};do
     
     
         if [ $? -eq 0 ]; then
-        echo "$i are installed sucessfully"
+         echo "$i are installed sucessfully"
         else
-        echo "ERROR :: $i installation failed"
-        exit 1
+         echo "ERROR :: $i installation failed"
+         exit 1
         fi
     fi
 done
