@@ -23,9 +23,10 @@ for i in ${PACKAGES[@]};do
      exit 1
     fi
 
-    dnf install $i -y
+   
    
     if [ $? -eq 0 ]; then
+     dnf install $i -y
      echo "$i are installed successful"
     else
      echo "ERROR :: $i are not installed sucessfull"
