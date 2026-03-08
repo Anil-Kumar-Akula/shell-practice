@@ -1,5 +1,5 @@
 #!/bin/bash
-packages=("mysql" "mongodb-mongosh" "nginx")
+packages=("mysql" "httpd" "nginx")
 
 for package in ${packages[@]}; do
     dnf install $package -y
