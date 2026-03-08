@@ -28,7 +28,7 @@ for i in ${PACKAGES[@]};do
     if [ $? -eq 0 ]; then
      echo "$i are already installed in the system"
     else
-     dnf install $i -y"
+     dnf install $i -y
     
     
         if [ $? -eq 0 ]; then
