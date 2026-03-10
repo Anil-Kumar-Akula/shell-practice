@@ -12,36 +12,64 @@
 # done
 
 
+# #!/bin/bash
+
+# echo "please enter the install packages"
+# read PACKAGES
+
+
+# if [ $(id -u) -ne 0 ]; then
+
+#  echo "ERROR :: Please use the root user privilege"
+
+# fi
+
+# for i in ${PACKAGES[@]}; do
+  
+#   dnf list installed "$i"* &
+#   if [ $? -eq 0 ]; then
+#     echo "$i already installed in the system"
+#     exit 0
+    
+#   else
+#         dnf install $i -y
+
+#         if [ $? -eq 0 ]; then
+        
+#           echo "$i installed successfully"
+        
+#         else
+        
+#           echo "ERROR :: $i installation failed"
+#         fi
+#   fi
+# done
+    
+
 #!/bin/bash
 
 echo "please enter the install packages"
-read PACKAGES
-
+read -a PACKAGES
 
 if [ $(id -u) -ne 0 ]; then
-
- echo "ERROR :: Please use the root user privilege"
-
+  echo "ERROR :: Please use the root user privilege"
+  exit 1
 fi
 
 for i in ${PACKAGES[@]}; do
-  
-  dnf list installed "$i"* &
+
+  dnf list installed "$i"* >/dev/null 2>&1
+
   if [ $? -eq 0 ]; then
     echo "$i already installed in the system"
-    exit 0
-    
   else
-        dnf install $i -y
+    dnf install $i -y
 
-        if [ $? -eq 0 ]; then
-        
-          echo "$i installed successfully"
-        
-        else
-        
-          echo "ERROR :: $i installation failed"
-        fi
+    if [ $? -eq 0 ]; then
+      echo "$i installed successfully"
+    else
+      echo "ERROR :: $i installation failed"
+    fi
   fi
+
 done
-    
