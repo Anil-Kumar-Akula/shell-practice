@@ -9,6 +9,8 @@ else
     echo "ERROR :: mongo.repo file is not copied successfully"
     exit 1
 fi
+dnf clean all
+dnf makecache
 dnf install mongodb-org -y 
 echo "mongodb-org package is installed successfully"
 systemctl enable mongod 
