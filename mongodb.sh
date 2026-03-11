@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cp mongo.repo  /etc/yum.repos.d/mongo.repo
+cp mongo.repo  /etc/yum.repos.d/
 echo "installing mongodb-org package"
 
 if [ $? -eq 0 ]; then
