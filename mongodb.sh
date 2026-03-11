@@ -2,6 +2,13 @@
 
 cp mongo.repo  /etc/yum.repos.d/mongo.repo
 echo "installing mongodb-org package"
+
+if [ $? -eq 0 ]; then
+    echo "mongo.repo file is copied successfully"
+else
+    echo "ERROR :: mongo.repo file is not copied successfully"
+    exit 1
+fi
 dnf install mongodb-org -y 
 echo "mongodb-org package is installed successfully"
 systemctl enable mongod 
