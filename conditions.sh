@@ -26,18 +26,20 @@
 #  echo "$NUMBER is a odd number"
 # fi
 
+
 echo "enter the number to check the prime number"
 read NUMBER
 count=0
 
-for  (( i=1; i<=NUMBER; i++))
+for (( i=1; i<=NUMBER; i++ ))
 do
     if [ $((NUMBER % i)) -eq 0 ]; then
         ((count++))
     fi
 done
+
 if [ $count -eq 2 ]; then
- echo "$NUMBER is a prime number"
+    echo "$NUMBER is a prime number"
 else
- echo "$NUMBER is not a prime number"
+    echo "$NUMBER is not a prime number"
 fi
